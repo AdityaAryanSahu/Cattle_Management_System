@@ -15,7 +15,7 @@ The Cattle Management System (CMS) is a Java-based application designed to strea
  # Tech Stack
  1. **Backend**: Java, OOP principles
  2. **Frontend**: JavaFX
- 3. **Data Integrity**: Checksums, 'SHA-256'
+ 3. **Data Integrity**: Checksum verification using **SHA-256**
 
  # Steps to download the application
  1. Clone the repository onto the system.
