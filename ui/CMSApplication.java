@@ -1,12 +1,12 @@
 
-package com.cms.ui;
+package com.ui;
 
-import com.cms.model.InsurancePolicy;
-import com.cms.model.*;
-import com.cms.model.Farmer;
-import com.cms.model.Cattle;
-import com.cms.model.InsuranceClaim;
-import com.cms.service.CMSService;
+import com.model.InsurancePolicy;
+import com.model.*;
+import com.model.Farmer;
+import com.model.Cattle;
+import com.model.InsuranceClaim;
+import com.service.CMSService;
 
 import javafx.application.Application;
 import javafx.application.Platform;
