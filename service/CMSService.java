@@ -1,6 +1,6 @@
-package com.cms.service;
+package com.service;
 
-import com.cms.model.*;
+import com.model.*;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
