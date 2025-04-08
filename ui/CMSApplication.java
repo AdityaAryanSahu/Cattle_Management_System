@@ -1,12 +1,12 @@
 
-package com.ui;
+package com.javafx;
 
-import com.model.InsurancePolicy;
-import com.model.*;
-import com.model.Farmer;
-import com.model.Cattle;
-import com.model.InsuranceClaim;
-import com.service.CMSService;
+import com.cms.model.InsurancePolicy;
+import com.cms.model.*;
+import com.cms.model.Farmer;
+import com.cms.model.Cattle;
+import com.cms.model.InsuranceClaim;
+import com.cms.service.CMSService;
 
 import javafx.application.Application;
 import javafx.application.Platform;
@@ -20,7 +20,7 @@ import javafx.stage.Stage;
 import java.util.ArrayList;
 import java.util.List;
 
-public class CMSApplication extends Application {
+public class trial extends Application {
     private Stage stage;
     private Scene scene1;
     private Scene scene2;
@@ -58,19 +58,22 @@ public class CMSApplication extends Application {
         Tab farmerTab = new Tab("Farmer Registration");
         farmerTab.setContent(createFarmerRegistrationPane());
         farmerTab.setStyle("-fx-background-color: #fff5ee;");
+        farmerTab.setClosable(false);
 
         Tab farmer2Tab = new Tab("Farmer Login");
         farmer2Tab.setContent(createFarmerLoginPane());
         farmer2Tab.setStyle("-fx-background-color: #fff5ee;");
-
+        farmer2Tab.setClosable(false);
 
         Tab adminTab = new Tab("Admin Registration");
         adminTab.setContent(createAdminRegistrationPane());
         adminTab.setStyle("-fx-background-color: #fff5ee;");
+        adminTab.setClosable(false);
 
         Tab admin2Tab = new Tab("Admin Login");
         admin2Tab.setContent(createAdminLoginPane());
         admin2Tab.setStyle("-fx-background-color: #fff5ee;");
+        admin2Tab.setClosable(false);
 
         tabPane.getTabs().addAll(farmerTab,farmer2Tab, adminTab,admin2Tab);
 
@@ -86,18 +89,22 @@ public class CMSApplication extends Application {
         Tab cattleTab = new Tab("Cattle Registration");
         cattleTab.setContent(createCattleRegistrationPane());
         cattleTab.setStyle("-fx-background-color: #fff5ee;");
+        cattleTab.setClosable(false);
 
         Tab viewCattle=new Tab("View cattle details");
         viewCattle.setContent(createCattleDetails());
         viewCattle.setStyle("-fx-background-color: #fff5ee;");
+        viewCattle.setClosable(false);
 
         Tab InsauranceClaimTab = new Tab("Insurance Claim");
         InsauranceClaimTab.setContent(createInsuranceClaimPane());
         InsauranceClaimTab.setStyle("-fx-background-color: #fff5ee;");
+        InsauranceClaimTab.setClosable(false);
 
         Tab InsaurancePolicyTab = new Tab("Insurance Policy and premium");
         InsaurancePolicyTab.setContent(createInsurancePolicyPane());
         InsaurancePolicyTab.setStyle("-fx-background-color: #fff5ee;");
+        InsaurancePolicyTab.setClosable(false);
 
         tabPane.getTabs().addAll(cattleTab,viewCattle,InsaurancePolicyTab,InsauranceClaimTab);
 
@@ -114,9 +121,11 @@ public class CMSApplication extends Application {
         Tab auditlog=new Tab("View Audit logs");
         auditlog.setContent(createViewAuditLogs());
         auditlog.setStyle("-fx-background-color: #fff5ee;");
+    auditlog.setClosable(false);
 
         Tab manageclaims=new Tab("Manage Insaurance claims");
         manageclaims.setContent(createManageClaims());
+        manageclaims.setClosable(false);
 
         manageclaims.setStyle("-fx-background-color: #fff5ee;");
 
